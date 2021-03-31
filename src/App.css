@@ -13,12 +13,12 @@ header {
   font-size: 2rem;
 }
 
-header,
-form {
+form, header{
   min-height: 20vh;
-  display: flex;
+  display:flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 form input,
 form button {
@@ -26,6 +26,7 @@ form button {
   font-size: 2rem;
   border: none;
   background: white;
+  max-width: 300px;
 }
 form button {
   color: #ff6f47;
@@ -115,7 +116,7 @@ select {
   margin: 1rem;
   position: relative;
   overflow: hidden;
-  color:blue;
+  color:red;
 }
 select {
   color: #ff6f47 !important;
@@ -140,3 +141,9 @@ select {
   transform: scale(1.5);
 }
 */
+@media (min-width: 425px){
+  form input,
+form button{
+  width: 100px;
+}
+}
